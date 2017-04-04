@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/gama-baja2.jpg','imagenes/gama-media2.jpg','imagenes/celufutu4.jpg','imagenes/historia1.jpg','imagenes/luminica.jpg','imagenes/flora.jpg','imagenes/ozono.jpg','imagenes/rtres.jpg','imagenes/conciencia1.jpg','imagenes/greenpeace1.jpg','imagenes/wwf1.jpg','imagenes/pnuma1.jpg','imagenes/mundomejor1.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Contaminación Ambiental</h1>
+</div>
+<div data-role="main" class="ui-content"></div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>¿Qué es lacontaminación ambiental?</h2>
+<p>Se muestra información de la contaminación.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>Tipos de contaminación.</h2>
+<p>Se muestra los tipos de contaminación.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consecuencias de la contaminación</h2>
+<P>Muestra las consecuencias.</P>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Reciclaje</h2>
+<p>Muestra el uso de las 3R</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>Medidas preventivas</h2>
+<p>Muestra opciones para reducir la contaminación.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminación de mi entorno</h2>
+<p>Muestra como esta mi entorno.</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/mdpi.png" width="46" heigth="46">
+</div>
+<div>
+<h4>Aplicación Tres</h4>
+<h4>Mayra Edith Rojas Barboza</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>DEFINICIÓN</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<h2>La Contaminación se denomina a la presencia en el ambiente de cualquier agente químico, físico o biológico nocivos para la salud o el bienestar de la población, de la vida animal o vegetal</h2>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>contaminación</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/contaminacion.png" width="26%" height="25%">
+    </div>
+    </div>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>contaminación</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/contaminacion1.jpg" width="26%" height="23%">
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicación Tres,MERB</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>TIPOS DE CONTAMINACIÓN</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<ul>
+<li>Contaminación del Agua</li>
+<li>Contaminación del Aire</li>
+<li>Contaminación del Suelo</li>
+<li>Contaminación Térmica</li>
+<li>Contaminación radiactiva</li>
+<li>Contaminación Acústica</li>
+<li>Contaminación Lumínica</li>
+</ul>
+
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tipo','','imagenes/luminica.jpg',1)"><img src="imagenes/termica.jpg" width="320" height="181" id="tipo"></a>
+</div>
+</div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+<h4>Aplicación Tres,MERB</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CONSECUENCIAS DE LA CONTAMINACIÓN</h1>
+  </div>
+   <div data-role="content" align="left">
+    <div>
+      <h2>Esta degradación del medio ambiente por un contaminante externo puede provocar daños en la vida cotidiana del ser humano y alterar las condiciones de supervivencia de la flora y la fauna.</h2>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('consecuencia','','imagenes/flora.jpg',1)"><img src="imagenes/ave.jpg" width="333" height="224" id="consecuencia"></a>
+<br>
+<h2>Otra consecuencia es el debilitamiento de la capa de ozono, que protege a los seres vivos de la radiación ultravioleta del Sol, debido a la destrucción del ozono estratosférico y esto provoca el calentamiento global.</h2>
+
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('conse','','imagenes/ozono.jpg',1)"><img src="imagenes/capaozono.jpg" width="400" height="225" id="conse"></a>
+</div>
+  </div>
+    <div data-role="footer" data-theme="c" data-position="fixed">
+    <h4>Aplicación Tres,MERB</h4>
+    </div>
+</div>
+    
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>RECICLAJE</h1>
+    </div>
+    <div data-role="content" align="left">
+    <dv>
+    <h2>El reciclaje consiste en obtener una nueva materia prima o producto, mediante un proceso fisicoquímico o mecánico, a partir de productos y materiales ya en desuso o utilizados. De esta forma, conseguimos alargar el ciclo de vida de un producto, ahorrando materiales y beneficiando al medio ambiente al generar menos residuos.</h2>
+    <br>
+      <h2 align="center">USO DE LAS 3R</h2>
+      <br>
+<ul>
+<li>REDUCIR</li>
+<h2>Lo que estamos diciendo es que se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios, a la vez que también la tiene con nuestro bolsillo.</h2>
+<li>REUTILIZAR</li>
+<h2>Nos estamos refiriendo a poder volver a utilizar las cosas y darles la mayor utilidad posible antes de que llegue la hora de deshacernos de ellas, dado que al disminuir el volumen de la basura.</h2>
+<li>RECICLAR</li>
+<h2>Consiste en el proceso de someter los materiales a un proceso en el cual se puedan volver a utilizar, reduciendo de forma verdaderamente significativa la utilización de nuevos materiales, y con ello, mas basura en un futuro.</h2>
+
+</ul>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tres','','imagenes/rtres.jpg',1)"><img src="imagenes/tresr.jpeg" width="199" height="114" id="tres"></a>
+  </div>
+</div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+   <h4>Aplicacion Tres,MERB</h4>
+</div>
+   </div>
+   
+   
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>MEDIDAS PREVENTIVAS</h1>
+    </div>
+    <div data-role="content" align="left">
+     <div>
+     <ul>
+<li>Controlar los derrames accidentales de petróleo.</li>
+<li>Tomar y generar conciencia de lo que está sucediendo.</li>
+<li>Realizar campañas de apoyo.</li>
+<li>Tener sentido de responsabilidad.</li>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('conciencia','','imagenes/conciencia1.jpg',1)"><img src="imagenes/conciencia.jpg" width="226" height="129" id="conciencia"></a> 
+<br>
+<h2>Organizaciones que protegen el medio ambiente</h2>
+<br>
+<li><a href="http://www.greenpeace.org/espana/es/" target="_self">Greenpeace</a></li>
+<h2>Sus iniciativas son notorias y tienen una gran influencia a escala internacional. ¿Su objetivo? El de proteger el equilibrio ecológico de todas partes del mundo, aunque son notables sus acciones por la defensa de la Antártida.</h2>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('greenpeace','','imagenes/greenpeace1.jpg',1)"><img src="imagenes/greenpeace.jpg" width="133" height="104" id="greenpeace"></a>
+<br>
+<li><a href="http://www.wwf.es/" target="_self">WWF</a></li>
+<h2>(World Wildlife Fund): Este Fondo Mundial Para la Naturaleza comenzó su andadura en 1961, en principio con el objetivo de defender  la vida silvestre de cada hábitat.</h2>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('wwf','','imagenes/wwf1.jpg',1)"><img src="imagenes/wwf.jpg" width="138" height="126" id="wwf"></a>
+<br>
+<li><a href="http://web.unep.org/americalatinacaribe/" target="_self">PNUMA</a></li>
+<h2>(Programa de Naciones Unidas para el Medio Ambiente).Tiene como objetivo ofrecer información contrastada y servir de inspiración para que la gente comience a preocuparse por el medio ambiente.</h2>
+</ul>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('pnuma','','imagenes/pnuma1.jpg',1)"><img src="imagenes/pnuma.jpg" width="196" height="111" id="pnuma"></a>
+    
+     </div>
+  </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+      <h4>Aplicacion Tres,MERB</h4>
+      </div>
+</div>
+      
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CONTAMINACIÓN DE MI ENTORNO</h1>
+    </div>
+  <div data-role="content" align="left">
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/carrocontaminacion.jpg" alt="carrocontaminacion" title="carrocontaminacion" id="wows1_0"/></li>
+		<li><img src="data1/images/entorno.jpg" alt="entorno" title="entorno" id="wows1_1"/></li>
+		<li><img src="data1/images/entorno1.jpg" alt="entorno1" title="entorno1" id="wows1_2"/></li>
+		<li><img src="data1/images/quemabasura.jpg" alt="quemabasura" title="quemabasura" id="wows1_3"/></li>
+		<li><img src="data1/images/entorno2.jpg" alt="entorno2" title="entorno2" id="wows1_4"/></li>
+		<li><img src="data1/images/entorno3.jpg" alt="entorno3" title="entorno3" id="wows1_5"/></li>
+		<li><img src="data1/images/entorno4.jpg" alt="entorno4" title="entorno4" id="wows1_6"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/jaguey.jpg" alt="jquery carousel" title="jaguey" id="wows1_7"/></a></li>
+		<li><img src="data1/images/plagasidas.jpg" alt="plagasidas" title="plagasidas" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="carrocontaminacion"><span><img src="data1/tooltips/carrocontaminacion.jpg" alt="carrocontaminacion"/>1</span></a>
+		<a href="#" title="entorno"><span><img src="data1/tooltips/entorno.jpg" alt="entorno"/>2</span></a>
+		<a href="#" title="entorno1"><span><img src="data1/tooltips/entorno1.jpg" alt="entorno1"/>3</span></a>
+		<a href="#" title="quemabasura"><span><img src="data1/tooltips/quemabasura.jpg" alt="quemabasura"/>4</span></a>
+		<a href="#" title="entorno2"><span><img src="data1/tooltips/entorno2.jpg" alt="entorno2"/>5</span></a>
+		<a href="#" title="entorno3"><span><img src="data1/tooltips/entorno3.jpg" alt="entorno3"/>6</span></a>
+		<a href="#" title="entorno4"><span><img src="data1/tooltips/entorno4.jpg" alt="entorno4"/>7</span></a>
+		<a href="#" title="jaguey"><span><img src="data1/tooltips/jaguey.jpg" alt="jaguey"/>8</span></a>
+		<a href="#" title="plagasidas"><span><img src="data1/tooltips/plagasidas.jpg" alt="plagasidas"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    <dv>
+      <h2>El principal factor de contaminación en mi entorno es la basura que dejan tirada las personas en la calle, lagunas y en los canales por donde pasa el agua, dando un mal aspecto a la colonia y afectando a los propietarios de viveros, otro factor son los insecticidas, puesto que se fumiga muy seguido por las plagas que llegan a presentar algunas plantas. </h2>
+ <br>
+<h2>Mis propuestas para combatir esto son:</h2>
+ <ul>
+<li>Crear conciencia ciudadana.</li>
+<li>Colocar la basura en los lugares apropiados.</li>
+<li>Controlar el uso de fertilizantes y pesticidas.</li>
+</ul>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('mundomejor','','imagenes/mundomejor1.jpg',1)"><img src="imagenes/mundomejor.jpg" width="203" height="126" id="mundomejor"></a>
+    </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion Tres,MERB</h4>
+</div>
+   </div>
+      
+</body>
+</html>
